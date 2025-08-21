@@ -84,5 +84,6 @@ export const WETH = {
   // [ChainId.GANACHE]: new Token(ChainId.GANACHE, '0xA7e60fCBD556d79Ad20745CE26cF66118EaCA7C2', 18, 'WMXC', 'Wrapped MXC'),
   [ChainId.GENEVA]: new Token(ChainId.GENEVA, '0xa5c0d0d32b41473c581a979deab01651d1f5eff5', 18, 'WMXC', 'Wrapped MXC'),
   [ChainId.WANNSEEMAINNET]: new Token(ChainId.WANNSEEMAINNET, '0xcBCE60BAD702026d6385E5f449e44099A655d14f', 18, 'WMXC', 'Wrapped MXC'),
-  [ChainId.HARDHAT]: new Token(ChainId.HARDHAT, '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512', 18, 'WMXC', 'Wrapped MXC')
+  [ChainId.HARDHAT]: new Token(ChainId.HARDHAT, '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512', 18, 'WMXC', 'Wrapped MXC'),
+  [ChainId.HUDSON]: new Token(ChainId.HUDSON, '0x12F3b69C248609BAc6ABD24067bec75F540a098d', 18, 'WMCH', 'Wrapped MCH')
 }

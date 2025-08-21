@@ -10,6 +10,7 @@ export enum ChainId {
   // GÖRLI = 5,
   // KOVAN = 42,
   // GANACHE = 1337,
+  HUDSON =  177888,
   GENEVA = 5167004,
   HARDHAT = 31337,
   WANNSEEMAINNET = 18686
@@ -30,6 +31,7 @@ const localChainId: ChainId = process.env.REACT_APP_CHAIN_ID ? parseInt(process.
 
 const FACTORY_MAP: { [key in ChainId]: string } = {
   [ChainId.MAINNET]: "0x",
+  [ChainId.HUDSON]: "0xC00fD690db86Ed98823381e4739Ef6Dd764B825c",
   [ChainId.GENEVA]: '0x39c47d083364b4A23d085c7945Fac9d42457d8C7',
   [ChainId.WANNSEEMAINNET]: "0x8bC7cf83f5F83781Ec85B78d866222987Ae24657",
   [ChainId.HARDHAT]: "0x5FbDB2315678afecb367f032d93F642f64180aa3",

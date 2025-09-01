@@ -39,7 +39,7 @@ const FACTORY_MAP: { [key in ChainId]: string } = {
 
 export const FACTORY_ADDRESS = FACTORY_MAP[localChainId]
 
-export const INIT_CODE_HASH = '0xf77c7fdda0f912f6b9f3e8d42972d72ced6502d52c17254de6ef7164f7d6e94c'
+export const INIT_CODE_HASH = '0xc7a644bb44a3c7c0abf3966adb6abdcadf7ef6e38945e8f4281539fc491d4cc9'
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 

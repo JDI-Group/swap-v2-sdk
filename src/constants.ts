@@ -11,6 +11,7 @@ export enum ChainId {
   // KOVAN = 42,
   // GANACHE = 1337,
   HUDSON =  177888,
+  MOONCHAIN = 999888,
   GENEVA = 5167004,
   HARDHAT = 31337,
   WANNSEEMAINNET = 18686
@@ -27,11 +28,12 @@ export enum Rounding {
   ROUND_UP
 }
 
-const localChainId: ChainId = process.env.REACT_APP_CHAIN_ID ? parseInt(process.env.REACT_APP_CHAIN_ID) : ChainId.WANNSEEMAINNET
+const localChainId: ChainId = process.env.REACT_APP_CHAIN_ID ? parseInt(process.env.REACT_APP_CHAIN_ID) : ChainId.MOONCHAIN
 
 const FACTORY_MAP: { [key in ChainId]: string } = {
   [ChainId.MAINNET]: "0x",
   [ChainId.HUDSON]: "0x72208C18A7a04B0E6A5f40898Cc460b94AA5e2a2",
+  [ChainId.MOONCHAIN]: "0x32E76C140d66850b3dF478730A7A01cb78e96402",
   [ChainId.GENEVA]: '0x39c47d083364b4A23d085c7945Fac9d42457d8C7',
   [ChainId.WANNSEEMAINNET]: "0x8bC7cf83f5F83781Ec85B78d866222987Ae24657",
   [ChainId.HARDHAT]: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
